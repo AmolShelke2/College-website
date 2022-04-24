@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,10 @@ body {
   background-position: center center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-container {
   background-image: url("assets/img4.jpeg");
   height: 100vh;
@@ -23,12 +28,13 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-bottom: 2rem;
 }
 
 .logo {
-  font-family: "Rubik", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 4rem;
-  font-weight: 100;
+  color: #fff;
 }
 
 ul {
@@ -107,6 +113,33 @@ ul {
   font-size: 19px;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+}
+
+.about-text p {
+  margin-top: 14px;
+  line-height: 2rem;
+  font-size: 19px;
+  margin-right: 3rem;
+}
+
+.clg-image {
+  margin-right: 3rem;
+}
+
+.clg-image img {
+  width: 800px;
+  border-radius: 3rem;
+}
+
 @media screen and (max-width: 850px) {
   .text h1 {
     font-size: 4rem;
@@ -160,5 +193,10 @@ ul {
 
   .nav-links li:hover {
     color: #fff;
+  }
+
+  /* About container  */
+  .about-container {
+    flex-direction: column;
   }
 }
