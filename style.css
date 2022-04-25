@@ -32,9 +32,8 @@ html {
 }
 
 .logo {
-  font-family: "Pacifico", sans-serif;
-  font-size: 4rem;
-  color: #fff;
+  width: 20rem;
+  border-radius: 8px;
 }
 
 ul {
@@ -129,6 +128,11 @@ ul {
   line-height: 2rem;
   font-size: 19px;
   margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-text p a {
+  font-weight: bold;
 }
 
 .clg-image {
